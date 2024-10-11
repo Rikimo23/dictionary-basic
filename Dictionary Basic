@@ -1,0 +1,85 @@
+d = {
+    'key1': 'value1',
+    'key2': 'value2',
+    'key3': 'value3'
+}
+
+d = dict([
+    (<key>, <value>),
+    (<key>, <value),
+      .
+      .
+      .
+    (<key>, <value>)
+])
+numbers= dict([
+    (1, 'One'),
+    (2, 'Two'),
+    (3, 'Three'),
+    (4, 'Four'),
+    (5, 'Five')
+])
+
+numbers[1]
+
+numbers[6] = 'Six'
+numbers
+
+numbers[1]= '1'
+numbers
+
+del numbers[1]
+numbers
+
+grocery_list= {'fruits': ['apples', 'blueberries', 'strawberries'],
+               'vegetables': ['broccoli', 'cauliflower'], 'meat': 'chicken'}
+
+grocery_list
+
+
+print(grocery_list.get('fruits'))
+print(grocery_list.get('dairy'))
+
+grocery_list.items()
+
+print(list(grocery_list.items())[1][0])
+print(list(grocery_list.items())[1][1])
+print(list(grocery_list.items())[1][1][0])
+
+
+print(grocery_list.keys())
+print(list(grocery_list.keys()))
+
+print(grocery_list.values())
+print(list(grocery_list.values()))
+
+print(grocery_list.pop('meat'))
+print(grocery_list)
+
+print(grocery_list.popitem())
+print(grocery_list)
+
+fav_vgame= {'Andrea': 'Stardew Valley',
+            'Bill': 'Super Smash Bros',
+            'Tom': 'God of War',
+            'Jose': 'Hogwarts Legacy',
+            'Mina': 'Pokemon Gold'}
+
+for key in fav_vgame:
+    print(key)
+
+for key in fav_vgame.keys():
+    print(key.lower())
+
+for key in sorted(fav_vgame):
+    print(key)
+
+for values in fav_vgame.values():
+    print(values)
+
+for key, value in fav_vgame.items():
+    print(f"\nKey: {key}") #the key inside the curly brackets comes from our key iterator in the for loop
+    print(f"Value: {value}") #the value inside the curly brackets comes from our value iterator in the for loop
+
+
+
